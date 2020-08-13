@@ -21,7 +21,7 @@
                         
                         die();
 
-                    } elseif  ($id > 0){
+                    } else {
 
                         $list = $html->find('div[class="C_a_03061"]', 0);
                         foreach( $list->find('a') as $element ){
