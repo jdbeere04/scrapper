@@ -3,15 +3,15 @@
 ?>
 <!DOCTYPE html>
     <head>
-        <div class = "inputs" type = "container">
-            <form method = "get">
-                <input type = "text" name = "ID"><br>
-                <input type = "submit" name = "submit"><br>
-            </form>
-        </div>
     </head>
     <body>
-        <?php
+      <div class = "inputs" type = "container">
+          <form method = "get">
+              <input type = "text" name = "ID"><br>
+              <input type = "submit" name = "submit"><br>
+           </form>
+      </div>     
+      <?php
 
             if(isset($_GET["submit"]))
             {
