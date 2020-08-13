@@ -19,17 +19,14 @@
                 $html = file_get_html("https://www.shutterstock.com/image-illustration/" . $id);
                     if(!$id){
                         
-                        die();
+                        break;
 
-                    } else {
-
+                    }                        
                         $list = $html->find('div[class="C_a_03061"]', 0);
                         foreach( $list->find('a') as $element ){
                             echo $element -> plaintext;
                             echo "<br>";
-                        }
-
-                    }
+                        }                
             } 
         ?>
     </body>
